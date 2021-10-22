@@ -1,10 +1,12 @@
 const canvas = document.getElementById("jsCanvas");
-const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("jsColor");
 const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 
+const ctx = canvas.getContext("2d");
+
+// 초기 캔버스 설정 ================== start
 const INITIAL_COLOR = "#2c2c2c";
 const CANVAS_SIZE = 500;
 
@@ -20,6 +22,7 @@ ctx.lineWidth = 2.5;
 
 let painting = false;
 let filling = false;
+// 초기 캔버스 설정 ================== end
 
 function stopPainting() {
     painting = false;
